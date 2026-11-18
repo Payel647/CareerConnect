@@ -1,0 +1,7 @@
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+frontend/job-portal/dist/
+backend/uploads/*
+!backend/uploads/.gitkeep

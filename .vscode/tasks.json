@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build frontend app",
+			"type": "shell",
+			"command": "cd frontend/job-portal && npm install && npm run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start backend server",
+			"type": "shell",
+			"command": "cd backend && npm install && node server.js",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate backend syntax",
+			"type": "shell",
+			"command": "cd backend && node --check server.js && node --check controllers/userController.js",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate frontend",
+			"type": "shell",
+			"command": "cd frontend/job-portal && npm run build && npm run lint",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
